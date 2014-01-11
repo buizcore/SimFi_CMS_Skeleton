@@ -9,5 +9,25 @@ $this->metaTags['de'] = array(
 );
 
 $this->metaDesc['de'] = <<<TEXT
-Willkommen bei S-DB Softwareentwicklung Dominik Bonsch, ihrem Spezialisten für webbasierte Anwendungsentwicklung und Projektrealisierung.
+Meta Beschreibung
 TEXT;
+
+
+
+$this->texts['de']['page.hello'] = 'Hallo';
+$this->texts['de']['page.world'] = 'Welt';
+
+// en
+
+$this->title['en'] = 'SimFi Example Site';
+$this->metaTags['en'] = array(
+    'SimFi',
+    'Example',
+);
+
+$this->metaDesc['en'] = <<<TEXT
+Meta description
+TEXT;
+
+$this->texts['en']['page.hello'] = 'Hello';
+$this->texts['en']['page.world'] = 'World';
