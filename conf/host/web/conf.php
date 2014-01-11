@@ -6,9 +6,9 @@ $this->settings = array(
   // relevante pfade
   "page_root"     => "SimFi_CMS_Skeleton",
   "fw_root"       => "SimFi_CMS/",
-  "base_url"      => "http://127.0.0.1/workspace/SimFi_CMS_Skeleton/",
-  "ssl_base_url"  => "http://127.0.0.1/workspace/SimFi_CMS_Skeleton/",
-  "redirect_mobile" => "http://localhost/workspace/SimFi_CMS_Skeleton/",
+  //"base_url"      => "http://127.0.0.1/workspace/SimFi_CMS_Skeleton/",
+  //"ssl_base_url"  => "http://127.0.0.1/workspace/SimFi_CMS_Skeleton/",
+  //"redirect_mobile" => "http://localhost/workspace/SimFi_CMS_Skeleton/",
   "img_path"      => "./theme/classic/images",
   "files_path"    => "./files/",
 
