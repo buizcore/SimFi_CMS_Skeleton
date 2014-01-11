@@ -2,19 +2,10 @@
 $this->activePage = 'home';
 $this->index = 'default';
 
-$this->title['de'] = 'Willkommen bei S-DB';
+$this->title['de'] = 'SimFi Example Site';
 $this->metaTags['de'] = array(
-  'Softwareentwicklung',
-  'Web',
-  'Spezialist',
-  'zuverlässig',
-  'schnell',
-  'Dominik Bonsch',
-  'PHP',
-  'Bruchsal',
-  'Karlsruhe',
-  'Graben-Neudorf',
-  'Baden'
+  'SimFi',
+  'Example',
 );
 
 $this->metaDesc['de'] = <<<TEXT
