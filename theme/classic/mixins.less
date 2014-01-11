@@ -1,0 +1,79 @@
+// SimFi Mixins
+// by dominik bonsch
+
+.bgSlide(@imgPath){
+  background-image: url(@imgPath);  
+  background-repeat:repeat-x;
+}
+
+
+// ELSE
+
+.rounded-corners (@radius: @cornerRadius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.v-gradient (@bgTop; @bgBottom) {
+  background: @bgTop; /* Old browsers */
+  background: -moz-linear-gradient(top,  @bgTop 1%, @bgBottom 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,@bgTop), color-stop(100%,@bgBottom)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  @bgTop 1%,@bgBottom 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  @bgTop 1%,@bgBottom 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  @bgTop 1%,@bgBottom 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  @bgTop 1%,@bgBottom 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@bgTop', endColorstr='@bgBottom',GradientType=0 ); /* IE6-9 */
+}
+
+.h-gradient (@bgLeft; @bgRight) {
+  background:@bgLeft; /* Old browsers */
+  background:-moz-linear-gradient(left,  @bgLeft 1%, @bgRight 100%); /* FF3.6+ */
+  background:-webkit-gradient(linear, left top, right top, color-stop(1%,@bgLeft), color-stop(100%,@bgRight)); /* Chrome,Safari4+ */
+  background:-webkit-linear-gradient(left,  @bgLeft 1%,@bgRight 100%); /* Chrome10+,Safari5.1+ */
+  background:-o-linear-gradient(left,  @bgLeft 1%,@bgRight 100%); /* Opera 11.10+ */
+  background:-ms-linear-gradient(left,  @bgLeft 1%,@bgRight 100%); /* IE10+ */
+  background:linear-gradient(to right,  @bgLeft 1%,@bgRight 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@bgLeft', endColorstr='@bgRight',GradientType=1 ); /* IE6-9 */
+}
+
+.no-select () {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* use mixin from bootstrap
+.opacity (@opacity) {
+  opacity: @opacity;
+  filter:Alpha(Opacity=@opacity);
+}
+*/
+
+.shadow () {
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.textShadow () {
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.floatInline() {
+  clear:none;
+  display:inline-block;
+  float:left;
+  zoom: 1; /* FU IE */  
+}
+
+.floatLeft() {
+  clear:left;
+  display:block;
+  float:left;
+  zoom: 1; /* FU IE */  
+}

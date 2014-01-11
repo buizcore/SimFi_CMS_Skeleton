@@ -1,0 +1,67 @@
+
+
+div.circle-container{
+  h2{
+    font-size:24px;
+    color:#5B2C17;
+    text-align:center;
+  }
+}
+
+div.circle{
+  
+  position:relative;
+  width:220px;
+  height:220px;
+  
+  &:hover{
+    div.circle_outer {
+      background: #C05800;
+    }
+    i{
+      color: #C05800;
+    }    
+  }
+  
+  i{
+    color: #5B2C17;
+    -moz-transition:color 1s, background-color 1s;
+    -webkit-transition:color 1s, background-color 1s;
+    -o-transition:color 1s, background-color 1s;
+    transition:color 1s, background-color 1s;    
+  }
+  
+  div.circle_outer {
+    position:absolute;
+    top:10px;
+    left:10px;
+    width: 200px;
+    height: 200px;
+    background: #5B2C17;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    -moz-transition:color 1s, background-color 1s;
+    -webkit-transition:color 1s, background-color 1s;
+    -o-transition:color 1s, background-color 1s;
+    transition:color 1s, background-color 1s;    
+  }
+  
+  div.circle_inner {
+    position:absolute;
+    top:20px;
+    left:20px;    
+    width: 180px;
+    height: 180px;
+    background: white;
+    -moz-border-radius: 90px;
+    -webkit-border-radius: 90px;
+    border-radius: 90px;
+  }
+  
+  div.text {
+    width: 100px;
+    height: 100px;
+  }  
+}
+

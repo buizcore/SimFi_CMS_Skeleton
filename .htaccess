@@ -1,0 +1,11 @@
+#AuthUserFile /usr/www/users/ramsey/.htpasswd
+#AuthType Basic
+#AuthName "Preview"
+#Require valid-user
+
+RewriteEngine on
+RewriteRule ^/?([0-9a-zA-Z_]+)$ index.php?l=de&page=home&do=$1&%{QUERY_STRING} [L]
+RewriteRule ^/?([0-9a-zA-Z_]+)/([0-9a-zA-Z_-]+)$ index.php?l=$1&page=$2&%{QUERY_STRING} [L]
+RewriteRule ^/?([0-9a-zA-Z_]+)/([0-9a-zA-Z_-]+)/([0-9a-zA-Z_]+)$ index.php?l=$1&page=$2&do=$3&%{QUERY_STRING} [L]
+RewriteRule ^/secure/(.*).pdf$ file.php?f=$1 [L]
+RewriteRule ^sitemap.xml$ sitemap.php [L]

@@ -1,0 +1,468 @@
+/* use mixin from bootstrap
+.opacity (@opacity) {
+  opacity: @opacity;
+  filter:Alpha(Opacity=@opacity);
+}
+*/
+#bc-admin-editor {
+  height: 40px;
+  margin: 0 auto !important;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  margin: 0 0 480px;
+  background-color: black;
+  z-index: 50;
+}
+#bc-admin-editor .controls {
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative;
+  color: white;
+  padding: 10px 0px 0px 15px;
+}
+#bc-admin-editor .controls div.block {
+  float: left;
+  margin-left: 30px;
+}
+#bc-admin-editor .controls a,
+#bc-admin-editor .controls i {
+  color: white;
+}
+#bc-admin-editor .controls input {
+  background-color: white;
+  width: 120px;
+}
+#bc-admin-editor .controls button {
+  background-color: white;
+  color: #F15A23;
+  border: 0px;
+  cursor: pointer;
+}
+.bc-box-contact input,
+.bc-box-contact textarea {
+  color: #585858;
+  height: 26px;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 1px #f0f0f0;
+  /* webkit browser*/
+  -moz-box-shadow: 1px 1px 1px #f0f0f0;
+  /* firefox */
+  box-shadow: 1px 1px 1px #f0f0f0;
+  padding-left: 5px;
+}
+.bc-box-contact input[type=radio],
+.bc-box-contact input[type=checkbox] {
+  -webkit-box-shadow: none;
+  /* webkit browser*/
+  -moz-box-shadow: none;
+  /* firefox */
+  box-shadow: none;
+}
+.bc-box-contact input.missing,
+.bc-box-contact textarea.missing {
+  border: 1px solid #ff0000;
+}
+.bc-box-contact div.missing {
+  border: 1px solid #ff0000;
+}
+.bc-box-contact div.missing input {
+  border: 1px solid #ff0000;
+}
+.bc-box-contact div.missing a {
+  border-top: 1px solid #ff0000 !important;
+  border-right: 1px solid #ff0000 !important;
+  border-bottom: 1px solid #ff0000 !important;
+}
+.bc-box-contact div.radio input {
+  border: none;
+  background: none;
+}
+.bc-box-contact div.radio label {
+  display: inline-block;
+  line-height: 16px;
+  height: 18px;
+  padding-top: 2px;
+}
+.bc-box-contact div.radio div {
+  display: inline-block;
+  height: 18px;
+}
+.bc-box-contact div.send-copy input {
+  border: none;
+  background: none;
+}
+.bc-box-contact div.send-copy label {
+  display: inline-block;
+  line-height: 16px;
+  height: 18px;
+  padding-top: 1px;
+}
+.bc-box-contact div.send-copy div {
+  display: inline-block;
+  height: 18px;
+}
+.bc-box-contact div.box-left {
+  width: 480px;
+  float: left;
+}
+.bc-box-contact div.box-left div.text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.bc-box-contact div.box-left div.f_comment {
+  width: 430px;
+  height: 240px;
+  padding: 5px;
+  padding-top: 7px;
+  margin-top: 55px;
+}
+.bc-box-contact div.box-left div.f_comment textarea {
+  padding: 5px;
+  width: 417px;
+  height: 200px;
+  resize: none;
+}
+.bc-box-contact div.box-left div.send-copy label {
+  padding-left: 5px;
+}
+.bc-box-contact div.box-right {
+  width: 424px;
+  float: left;
+  margin-top: 30px;
+}
+.bc-box-contact div.box-right div.text {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.bc-box-contact div.box-right div.inp {
+  float: left;
+  padding-bottom: 10px;
+}
+.bc-box-contact div.box-right div.error {
+  margin-top: 15px;
+  color: #ff0000;
+}
+.bc-box-contact div.box-right div.f_salutation {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 400px;
+}
+.bc-box-contact div.box-right div.f_salutation div.radio {
+  width: 70px;
+  float: left;
+}
+.bc-box-contact div.box-right div.f_salutation label {
+  padding-left: 5px;
+}
+.bc-box-contact div.box-right div.f_lastname {
+  padding-right: 8px;
+}
+.bc-box-contact div.box-right div.f_lastname input {
+  width: 232px;
+}
+.bc-box-contact div.box-right div.f_surname input {
+  width: 181px;
+}
+.bc-box-contact div.box-right div.f_company input {
+  width: 421px;
+}
+.bc-box-contact div.box-right div.f_street {
+  padding-right: 6px;
+}
+.bc-box-contact div.box-right div.f_street input {
+  width: 301px;
+}
+.bc-box-contact div.box-right div.f_no input {
+  width: 114px;
+}
+.bc-box-contact div.box-right div.f_zip {
+  padding-right: 8px;
+}
+.bc-box-contact div.box-right div.f_zip input {
+  width: 82px;
+}
+.bc-box-contact div.box-right div.f_city {
+  padding-right: 8px;
+}
+.bc-box-contact div.box-right div.f_city input {
+  width: 183px;
+}
+.bc-box-contact div.box-right div.f_country input {
+  width: 140px;
+}
+.bc-box-contact div.box-right div.f_phone {
+  padding-right: 8px;
+}
+.bc-box-contact div.box-right div.f_phone input {
+  width: 153px;
+}
+.bc-box-contact div.box-right div.f_email input {
+  width: 260px;
+}
+.bc-box-contact div.box-right div.send {
+  padding-top: 20px;
+}
+.bc-box-contact div.box-right div.send div.captacha {
+  float: left;
+  width: 125px;
+}
+.bc-box-contact div.box-right div.send div.captacha img {
+  border: 1px solid silver;
+  width: 112px;
+  height: 128;
+}
+.bc-box-contact div.box-right div.send div.captcha_input {
+  width: 185px;
+  float: left;
+  padding-top: 24px;
+}
+.bc-box-contact div.box-right div.send div.captcha_input input {
+  width: 57px;
+}
+.bc-box-contact div.box-right div.send div.send {
+  float: left;
+  padding-top: 25px;
+}
+.bc-box-contact div.box-right div.send div.send button {
+  width: 112px;
+  height: 28px;
+}
+#image-gallery {
+  margin-bottom: 50px;
+}
+#image-gallery ul {
+  padding-left: 20px;
+}
+#image-gallery ul li {
+  float: left;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+#image-gallery ul li img {
+  width: 440px;
+}
+#image-gallery ul li h3 {
+  text-transform: uppercase;
+}
+#image-gallery ul li p {
+  color: #a3a3a3;
+  width: 440px;
+}
+div.circle-container h2 {
+  font-size: 24px;
+  color: #5B2C17;
+  text-align: center;
+}
+div.circle {
+  position: relative;
+  width: 220px;
+  height: 220px;
+}
+div.circle:hover div.circle_outer {
+  background: #C05800;
+}
+div.circle:hover i {
+  color: #C05800;
+}
+div.circle i {
+  color: #5B2C17;
+  -moz-transition: color 1s, background-color 1s;
+  -webkit-transition: color 1s, background-color 1s;
+  -o-transition: color 1s, background-color 1s;
+  transition: color 1s, background-color 1s;
+}
+div.circle div.circle_outer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 200px;
+  height: 200px;
+  background: #5B2C17;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  -moz-transition: color 1s, background-color 1s;
+  -webkit-transition: color 1s, background-color 1s;
+  -o-transition: color 1s, background-color 1s;
+  transition: color 1s, background-color 1s;
+}
+div.circle div.circle_inner {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 180px;
+  height: 180px;
+  background: white;
+  -moz-border-radius: 90px;
+  -webkit-border-radius: 90px;
+  border-radius: 90px;
+}
+div.circle div.text {
+  width: 100px;
+  height: 100px;
+}
+/* clean all */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+select,
+option,
+input,
+button,
+textarea,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font: normal 14px swis721_lt_btlight;
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+a {
+  cursor: pointer;
+}
+a.plain {
+  cursor: default;
+}
+pre {
+  font-family: "Courier";
+}
+div.left {
+  float: left;
+  clear: left;
+}
+div.inline {
+  float: left;
+  display: inline-block;
+}
+div.right {
+  float: right;
+}
+div.clear {
+  clear: both;
+  height: 1px;
+}
+div.clear.xxsmall {
+  height: 7px;
+}
+div.clear.xsmall {
+  height: 20px;
+}
+div.clear.border {
+  height: 25px;
+}
+div.clear.small {
+  height: 40px;
+}
+div.clear.medium {
+  height: 60px;
+}
+div.clear.large {
+  height: 100px;
+}
+/*wtf*/
+#mceResizeHandlesw {
+  display: none;
+}

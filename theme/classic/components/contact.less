@@ -1,0 +1,257 @@
+.bc-box-contact{
+
+  input,
+  textarea{
+    color:#585858;
+    height:26px;
+    background-color:white;    
+    -webkit-box-shadow: 1px 1px 1px #f0f0f0;  /* webkit browser*/ 
+    -moz-box-shadow: 1px 1px 1px #f0f0f0; /* firefox */ 
+    box-shadow: 1px 1px 1px #f0f0f0;
+    padding-left:5px;
+  }
+  
+  input[type=radio],
+  input[type=checkbox] {
+    -webkit-box-shadow: none;  /* webkit browser*/ 
+    -moz-box-shadow: none; /* firefox */ 
+    box-shadow: none;
+  }
+  
+  input.missing,
+  textarea.missing{
+    border:1px solid @c-missing;
+  }
+  
+  div.missing {
+  
+    border:1px solid @c-missing;    
+    
+    input {
+      border:1px solid @c-missing;
+    }
+    
+    a{
+      border-top:1px solid @c-missing !important;
+      border-right:1px solid @c-missing !important;
+      border-bottom:1px solid @c-missing !important;
+    }
+
+  }
+  
+  div.radio{
+    input{
+      border:none;
+      background:none;        
+    }
+    label{
+      display:inline-block;
+      line-height:16px;
+      height:18px;        
+      padding-top:2px;            
+    }
+    div{
+      display:inline-block;
+      height:18px;
+    }
+    
+  }
+  
+  div.send-copy{
+    input{
+      border:none;
+      background:none;
+    }        
+    label{
+      display:inline-block;
+      line-height:16px;          
+      height:18px;    
+      padding-top:1px;                
+    }
+    div{
+      display:inline-block;
+      height:18px;
+    }
+    
+  }
+  
+  div.box-left {
+    width:480px;
+    float:left;
+
+  
+    div.text{
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    
+    
+    div.f_comment{
+      
+      width:430px;
+      height:240px;  
+      padding:5px;   
+      padding-top:7px;  
+      margin-top:55px;
+      
+      textarea{
+        padding:5px;
+        width:417px;
+        height:200px;
+        resize: none;
+      }
+      
+    }
+    
+    div.send-copy{
+      label{
+        padding-left:5px;
+      }
+      
+    }
+    
+  }
+  
+  div.box-right {
+    width:424px;
+    float:left;
+    
+    margin-top: 30px; 
+    div.text{
+      margin-left: 0px;     
+      padding-left: 0px;           
+    }
+    
+    div.inp{
+      float:left;
+      padding-bottom:10px;
+    }
+    
+    div.error{
+      margin-top:15px;
+      color:@c-missing;
+    }
+
+    div.f_salutation{
+      margin-top: 30px;
+      margin-bottom: 10px;
+      width:400px;
+      div.radio{
+        width: 70px;
+        float:left;
+      }
+      
+      label{
+        padding-left:5px;
+      }
+      
+    }
+    
+    div.f_lastname{
+      padding-right:8px;
+      input{
+        width:232px;
+      }
+    }
+    
+    div.f_surname{
+      
+      input{
+        width:181px;
+      }          
+
+    }     
+    
+    div.f_company{
+      input{
+        width:421px;
+      }   
+    }     
+    
+    div.f_street{
+      padding-right:6px;          
+      input{
+        width:301px;
+      }          
+
+    }      
+    
+    div.f_no{
+
+      input{
+        width:114px;          
+      }          
+    }      
+    
+    div.f_zip{
+      padding-right:8px;          
+      input{
+        width:82px;
+      }          
+    }          
+    
+    div.f_city{
+      padding-right:8px;          
+      input{
+        width:183px;
+      }          
+    }            
+    
+    div.f_country{
+      input{
+        width:140px;
+      }   
+    }              
+    
+    div.f_phone{
+      padding-right:8px;   
+      input{
+        width:153px;
+      }          
+    }                
+    
+    div.f_email{
+      input{
+        width:260px;
+      }          
+    }   
+    
+    
+    div.send{
+      
+      padding-top:20px;
+      
+      div.captacha {
+        float:left;
+        width:125px;
+        img{
+          border:1px solid silver;
+          width:112px;
+          height:128;
+        }
+      }
+      
+      div.captcha_input{
+        width:185px;
+        float:left; 
+        padding-top:24px;
+        input{
+          width:57px;
+        }           
+      }
+
+      div.send{
+        float:left;
+        padding-top:25px;            
+        
+        button{
+          width:112px;
+          height:28px;
+        }
+        
+      }
+      
+    }
+
+  }// end l-contact     
+}

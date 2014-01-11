@@ -1,0 +1,108 @@
+/* clean all */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+select,option,input,button,textarea,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+{
+  margin:0;
+  padding:0;
+  font: normal @font-size-base @font-family-base;
+  text-decoration:none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section 
+{
+  display: block;
+}
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul,li,ol
+{
+  list-style:  none;
+}
+
+a
+{
+  cursor:pointer;
+}
+
+a.plain
+{
+  cursor:default;
+}
+
+pre
+{
+  font-family:"Courier";
+}
+
+    
+div.left {
+  float:left;
+  clear:left;
+}
+
+div.inline {
+  float:left;
+  display:inline-block;
+}
+
+div.right {
+  float:right;
+}
+
+div.clear {
+  clear:both;  
+  height:1px;  
+  
+  &.xxsmall {
+    height:7px;  
+  } 
+
+  &.xsmall {
+    height:20px;  
+  } 
+
+  &.border {
+    height:25px;  
+  }
+  
+  &.small {
+    height:40px;
+  }  
+  
+  &.medium {
+    height:60px;
+  }
+  
+  &.large {
+    height:100px;
+  }  
+}
+
+
+
+/*wtf*/
+#mceResizeHandlesw {
+  display: none;
+}
