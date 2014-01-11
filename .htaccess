@@ -1,4 +1,4 @@
-#AuthUserFile /usr/www/users/ramsey/.htpasswd
+#AuthUserFile /usr/www/users/sdb/.htpasswd
 #AuthType Basic
 #AuthName "Preview"
 #Require valid-user
