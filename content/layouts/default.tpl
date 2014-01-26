@@ -89,7 +89,6 @@ $('input, textarea').placeholder();
 <![endif]-->
 
 
-<?php include $this->tplPath.'/admin-js.tpl'; ?>
 <?php echo $this->embededJS(); ?>
 
 <div id="upload-preview" style="display:none;" ></div>
